@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--My Designs-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--MathJax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/24901e1a6b.js" crossorigin="anonymous"></script>
+
+    <!--My Scripts-->
+    <script src="shortHand.js"></script>
+    <script src="togglable.js" async></script>
+
+    <!--Title-->
+    <title>Barry Acorps Website</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <img src="sprites/newtitle.png" alt="Barry Acorps logo">
+    </header>
+
+    <div class="title">
+        <h1>Title</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Posts</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section>
+            <h2 class="contTitle">Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <figure class="sideimage"> 
+                <img src="sprites/duck.jpg" alt="A duck">
+                <figcaption>Duck</figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nemo quam officia dolores pariatur excepturi blanditiis corporis quod amet. Nihil autem, voluptatem facere dolores accusamus excepturi nam alias tempore modi.</p>
+
+            
+            <p><b>Lorem ipsum</b>, dolor sit amet consectetur adipisicing elit. Expedita unde molestias assumenda eveniet nesciunt sit dolore consectetur voluptatibus minus reprehenderit alias aliquid inventore, nam similique perferendis incidunt! Iste, quisquam repellat.</p>
+
+            <ul>
+                <li>Unordered 1</li>
+                <li>Unordered 2</li>
+                <li>Unordered 3</li>
+            </ul>
+
+            <ol>
+                <li>Ordered 1</li>
+                <li>Ordered 2</li>
+                <li>Ordered 3</li>
+            </ol>
+
+            <a href="something">Lmao</a>
+            <hr>
+            <table class="tableblock">
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                </tr>
+            </table>
+            </table>
+
+            <hr>
+
+            <p>Test</p>
+
+            <pre><code>sadasdasd
+sd
+WHAT TH</code></pre>
+
+            <p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                $$x = {\frac{ -b \pm  \sqrt{b^2-4ac}} {2a}}.$$</p>
+            
+
+            <article class="warning">
+                
+            </article>
+            
+            <article class="togglable" id="toggle1">
+                <div class="togglablHeader">
+                <button onclick="toggle('toggle1')"><i class="fa-solid fa-terminal"></i></button>
+                <h3>I need to be hidden</h3> 
+                </div>
+                <div class="togglablContent">
+                    <p>No seriously, I really need to be hidden. This might be spoilers or something</p>
+                </div>
+            </article>
+
+            <figure class="blockimage"> 
+                <img src="sprites/waterwhite.jpg" alt="waterwhite">
+                <figcaption>Walter white</figcaption>
+            </figure>
+
+            <footer>
+                Made by Barry Acorps, 2022.
+            </footer>
+        </section>
+    </div>
+
+
+
+
+    
+</body>
+</html>

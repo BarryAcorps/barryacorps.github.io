@@ -1,0 +1,165 @@
+/* Variables that won't be used at all */
+
+:root {
+    --purple: #ba6dd8;
+}
+
+/*Body*/
+body {
+    font-family: Consolas, monaco, monospace;
+    background-color: rgb(24, 24, 24);
+    margin: 0;
+}
+
+
+/*Header*/
+header img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border: 5px solid rgb(153, 153, 153);
+}
+.title h1 {
+    text-align: center;
+}
+
+
+/*Nav */
+nav li {
+    padding: 0.5rem;
+    float: right;
+    font-size: 1.2em;
+    
+}
+
+nav li :is(a:visited, a) {
+    color: var(--purple);
+}
+
+/*Content*/
+.content {
+    border-top: 4px solid var(--purple);
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.content section {
+    padding: 3rem;
+}
+
+:is(h1, h2,h3,h4,h5,h6) {
+    color: var(--purple);
+    text-shadow: 0 0 5px var(--purple);
+}
+
+.content :is(ul, ol) {
+    border-left: 3px solid rgb(165, 76, 224);
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(72, 46, 75));
+    padding: 0.2rem 30px;
+}
+
+figure.sideimage {
+    display: block;
+    float: right;
+    max-width: 15rem;
+    border: 1px solid rgb(167, 82, 152);
+    padding: 0.5rem;
+    background: #433747;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure.blockimage {
+    display: block;
+    margin: 1rem auto;
+    max-width: 70%;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+
+.content li {
+    margin: 0.4rem auto;
+}
+
+pre {
+   margin: auto;
+   width: 99%;
+   padding: 4px;
+   border: 5px solid rgb(150, 94, 138); 
+   border-radius: 5px;
+   background: #111;
+}
+
+.togglable {
+    width: 95%;
+    margin: auto;
+    background: rgb(28, 4, 36);
+}
+
+
+.togglablHeader {
+    position: relative;
+    padding: 0.2rem 1rem;
+    background:rgba(255, 255, 255, 0.05)
+}
+
+.togglablHeader button {
+    background-color: rgba(165, 76, 224, 0.5);
+    color: white;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.togglablHeader button:hover {
+    background-color: rgba(165, 76, 224, 0.8);
+}
+
+.togglablContent {
+    padding: 0.5rem;
+    display: none;
+    background: rgba(210, 155, 228, 0.473);
+}
+
+.togglablContent :is(h2,h3,h4,h5,h6) {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 0.2rem;
+    border: 2px solid var(--purple);
+}
+
+th {
+    background: rgba(210, 155, 228, 0.473);
+}
+
+.tableblock {
+    margin: auto;
+}
+
+hr {
+    border: 2px dashed var(--purple);
+}
+
+b, strong {
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+footer {
+    font-size: 0.8em
+    color: gray;
+}
