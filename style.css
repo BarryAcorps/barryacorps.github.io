@@ -53,6 +53,11 @@ nav li :is(a:visited, a) {
     text-shadow: 0 0 5px var(--purple);
 }
 
+:is(h1, h2,h3,h4,h5,h6) a {
+    color: var(--purple);
+    text-shadow: 0 0 5px var(--purple);
+}
+
 .content :is(ul, ol) {
     border-left: 3px solid rgb(165, 76, 224);
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(72, 46, 75));
@@ -135,6 +140,7 @@ pre {
     text-shadow: 0 0 5px white;
 }
 
+
 table, th, td {
     border-collapse: collapse;
     padding: 0.2rem;
@@ -162,4 +168,16 @@ b, strong {
 footer {
     font-size: 0.8em;
     color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 80%;
+        overflow: auto;
+    }
+
+    table, td, th {
+        font-size: 0.9em;
+        padding: 0.1rem;
+    }
 }
