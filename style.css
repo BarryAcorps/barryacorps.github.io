@@ -36,6 +36,10 @@ nav li :is(a:visited, a) {
     color: var(--purple);
 }
 
+li :is(a:visited, a) {
+    color: white;
+}
+
 /*Content*/
 .content {
     border-top: 4px solid var(--purple);
@@ -141,6 +145,7 @@ pre {
 }
 
 
+
 table, th, td {
     border-collapse: collapse;
     padding: 0.2rem;
@@ -180,4 +185,9 @@ footer {
         font-size: 0.9em;
         padding: 0.1rem;
     }
+}
+
+.postinfo {
+    font-size: 0.8em;
+    color: gray;
 }
